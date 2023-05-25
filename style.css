@@ -1,0 +1,92 @@
+@font-face {
+    font-family: pixel;
+    src: url(publicpixel-z84yd.ttf)
+}
+
+* {
+    font-family: pixel;
+}
+.blue-n, .green-n, .red-n {
+    font-size:xx-large;
+}
+.blue-n {
+    color: #0E2FFF;
+}
+.green-n {
+    color:#008F01;
+}
+.red-n {
+    color:#FE2900;
+}
+
+body {  
+    background-color: rgb(155, 252, 255);
+}
+main {
+    display: flex;
+    justify-content: center;
+}
+
+.row {
+    display: flex;
+    height:85px;
+}
+
+img {
+    height: 86px;
+    max-width:100%;
+}
+.border-grid {
+    border: 10px inset #CBCBCB;
+    border-right: 10px solid white;
+}
+
+.grid {
+    border: 10px inset white;
+    background-color: #CBCBCB;
+    
+}
+
+.blue-n, .green-n, .red-n, .empty, .full, .bomb {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:80px;
+}
+.blue-n, .green-n, .red-n, .empty, .bomb {
+    border-bottom: 3px dashed black;
+    border-right: 3px dashed black;
+}
+
+.full {
+    background-color: #CBCBCB;
+    border-bottom: 6px solid black;
+    border-right: 3px solid black;
+}
+
+.inside-border {
+
+    box-shadow: inset -3px -3px 0px 0px #929292;
+    border-top: 3px solid white;
+    border-left: 3px solid white;
+    width:100%;
+    height:77px;
+
+}
+
+.inside-border:hover {
+    opacity:0;
+   
+    
+}
+/*.under-n:hover ~ .full {
+   background-image: url(/image/bomb.png);
+}*/
+
+/*.inside-border> .full {
+    position: absolute;
+
+}*/
+.inside-border .full> .red-n {
+    position:absolute;
+}
