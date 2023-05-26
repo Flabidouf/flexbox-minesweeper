@@ -65,28 +65,16 @@ img {
 }
 
 .inside-border {
-
+    position: absolute;
     box-shadow: inset -3px -3px 0px 0px #929292;
     border-top: 3px solid white;
     border-left: 3px solid white;
-    width:100%;
+    width:80px;
     height:77px;
+    background-color: #CBCBCB;
 
 }
 
 .inside-border:hover {
     opacity:0;
-   
-    
-}
-/*.under-n:hover ~ .full {
-   background-image: url(/image/bomb.png);
-}*/
-
-/*.inside-border> .full {
-    position: absolute;
-
-}*/
-.inside-border .full> .red-n {
-    position:absolute;
 }
